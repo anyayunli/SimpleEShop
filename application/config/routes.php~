@@ -42,7 +42,7 @@ $route['default_controller'] = "";
 $route['404_override'] = '';
 
 $route[':any/item/(:num)']="itemController/showItem/$1";
-$route[':any/item/cart/(:num)']="cartController/addtoCart/$1";
+$route[':any/item/cart/(:num)']="cartController/showCart/$1";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

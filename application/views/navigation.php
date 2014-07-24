@@ -1,6 +1,3 @@
-<style>
-
-</style>
 <!-- navigation -->
 <div class="navbar navbar-fixed-top">
 <div class="navbar-inner">
@@ -14,7 +11,7 @@
 
 <div class="nav-collapse collapse">
 <ul class="nav pull-left">
-<li><a href="homepage.php">Homepage</a></li>
+<li><a href="<?echo base_url()?>index.php/homepageController">Homepage</a></li>
 <li><a href="shop.php">All Items</a></li>
 <li><a href="<?echo base_url()?>index.php/myaccountController.php">My Account</a></li>
 </ul>

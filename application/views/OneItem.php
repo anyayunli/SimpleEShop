@@ -1,15 +1,17 @@
 <div class="span3 product">
-<a href="php/ItemPage.php?productid='.$product['ProductID'].'">
+<?$itempage='homepageController/item/'.$ProductID?>
+<a href="<?echo $itempage;?>">
 <figure >
 
 <figcaption>
-<h5>'.$product['ProductName'].'<br>
-<span>'.$product['ProductPrice'].'</span>
-<div style="color:red">NOW:'.$product['ProductPrice']*$product['Discount'].'</div>
+<h5><? echo $ProductName?><br>
+<span><? echo $ProductPrice ?></span>
+<div style="color:red">NOW:<? echo $ProductPrice*$Discount?></div>
 
 </h5>
 </figcaption>
-<img src="Images/'.$product['ProductImage'].'"></figure>
+<? $imagepath=base_url().'application/'.$ProductImage;?>
+<img src="<?echo $imagepath; ?>"></figure>
 </a>
 </div>
 	
