@@ -21,6 +21,32 @@ class Productmodel extends CI_Model{
 
 	}
 
+	public function get_sales_product_by_cate($cid){
+		$this->db->select('*');
+		$this->db->from("Product");
+		$this->db->join('ProdCategory', "ProdCategory.ProductID=Product.ProductID and ProdCategory.CategoryID='$cid' and Product.Discount<0.99");
+                $query=$this->db->get();
+		$data=$query->result_array();
+		if($query->num_rows()>0)
+			return $data;
+        	else
+        		return false;
+
+	}
+
+	public function get_normal_product_by_cate($cid){
+		$this->db->select('*');
+		$this->db->from("Product");
+		$this->db->join('ProdCategory', "ProdCategory.ProductID=Product.ProductID and ProdCategory.CategoryID='$cid' and Product.Discount=0.99");
+                $query=$this->db->get();
+		$data=$query->result_array();
+		if($query->num_rows()>0)
+			return $data;
+        	else
+        		return false;
+		
+	}
+
 
 
 

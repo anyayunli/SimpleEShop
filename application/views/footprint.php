@@ -4,7 +4,7 @@
 
 		<ul class="breadcrumb">
 			<li><a href="<?echo base_url()?>index.php/homepageController">Home</a>></li>
-			<li><a href="shop.php">shop</a></li>
+			<li><a href="<?echo base_url()?>index.php/shopController">shop</a></li>
 		
 		</ul>
 	</nav>

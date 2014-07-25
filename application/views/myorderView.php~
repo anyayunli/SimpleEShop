@@ -1,7 +1,5 @@
 <?
-$this->load->view("header");
-$this->load->view("navigation");
-$this->load->view("footprint");
+
 ?>
 <script>
 function show(val){

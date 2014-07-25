@@ -12,7 +12,7 @@
 <div class="nav-collapse collapse">
 <ul class="nav pull-left">
 <li><a href="<?echo base_url()?>index.php/homepageController">Homepage</a></li>
-<li><a href="shop.php">All Items</a></li>
+<li><a href="<?echo base_url()?>index.php/shopController">All Items</a></li>
 <li><a href="<?echo base_url()?>index.php/myaccountController">My Account</a></li>
 <li><a href="<?echo base_url()?>index.php/logoutController">Log Out</a></li>
 </ul>

@@ -7,10 +7,9 @@
 <h5><? echo $ProductName?><br>
 <span><? echo $ProductPrice ?></span>
 <?
-if($Discount<0.99){
+if($Discount<0.99)
 $sale_price=$ProductPrice*$Discount;
 echo '<div style="color:red">NOW:'.$sale_price.'</div>';
-}
 ?>
 </h5>
 </figcaption>

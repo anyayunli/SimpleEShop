@@ -3,7 +3,7 @@ $this->load->view("header");
 $this->load->view("navigation");
 $this->load->view("footprint");
 
-//print_r($user); 
+print_r($user); 
 ?>
 
 <section id="checkout" class="main-content">

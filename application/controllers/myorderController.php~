@@ -51,9 +51,6 @@ class MyorderController extends CI_Controller{
 	}
 
 	public function seedetail(){
-		if(!$this->session->userdata('userid')){
-			redirect(base_url().'index.php/loginController');
-		}
 		$orderid=$this->input->post("showorderid");
 		$this->load->model("orderdetailmodel");
 		$data['products']=$this->orderdetailmodel->get_order_by_orderid($orderid);

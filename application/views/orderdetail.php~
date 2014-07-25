@@ -39,7 +39,7 @@ $this->load->view("footprint");
 				</table>';	
 
 			?>
-<a href="<?echo base_url()?>index.php/myorderController"
+<a href="<?echo base_url()?>index.php/myorderController" name="backtoorder"
 class="btn btn-checkout">Back to My Order</a>
 	
         </form>

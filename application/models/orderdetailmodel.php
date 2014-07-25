@@ -11,7 +11,7 @@ public function get_order_by_orderid($oid){
 	$query=$this->db->get("OrderDetail");
 	$data=$query->result_array();
 	if($query->num_rows()>0)
-	return $data[0];
+	return $data;
         else
         return false;
 

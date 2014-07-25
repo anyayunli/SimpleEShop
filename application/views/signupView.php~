@@ -38,7 +38,7 @@ var pwd_filter = /^[a-zA-Z0-9]{5,15}$/;
 		<div class="login">
 				<input type="text" placeholder="Email" name="email"><br>
 				<input type="password" placeholder="password" name="password"><br>
-				<input type="submit" value="Sigu Up!" name="signup_button">
+				<input type="submit" value="Shop Now!" name="signup_button">
 		</div>
 </form>
 <div class="signup">Already A Member?<a href="<?echo base_url().'index.php/loginController/'?>"> Log In</div>

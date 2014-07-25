@@ -21,7 +21,7 @@
 
 <? 
 foreach($product as $row){
-//print_r($row);
+if($row['Discount']<0.99)
 $this->load->view("OneItem", $row); 
 }
 ?>
