@@ -102,8 +102,13 @@ class CartController extends CI_Controller{
 
 		}
 
-               if($command=="checkout"){
-                   
+		if($command=="checkout"){
+			if($this->session->userdata('userid')){
+				redirect(base_url().'index.php/checkoutController');
+
+			}else{
+                                redirect(base_url().'index.php/loginController');
+			}
 
 		}
 

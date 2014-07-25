@@ -47,9 +47,8 @@ public function signup(){
 	}else{
          $this->model->insert_by_signup($password, $email);
 	 $user=$this->model->get_customer_by_login($password, $email);
-         $data=array("userid"=>$user['CustomerID']);
-	 $this->session->set_userdata($data);
-         redirect(base_url().'index.php/myaccountController');
+         print_r($user);
+         //redirect(base_url().'index.php/myaccountController');
        	
 
 	}

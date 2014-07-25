@@ -1,14 +1,15 @@
 <?
-$this->load->view("header");
+//$this->load->view("header");
 $this->load->view("navigation");
 $this->load->view("footprint");
 
+print_r($user); 
 ?>
 
 <section id="checkout" class="main-content">
 	<div class="container">
 		<div class="row-fluid noborder">
-<form method="post" class="form-horizontal" action="vieworder.php">
+<form method="post" class="form-horizontal" action="<?echo base_url()?>index.php/myorderController">
 
 
 		<fieldset id="billing_details">
@@ -16,14 +17,14 @@ $this->load->view("footprint");
 		<div class="control-group ">
 			<label class="control-label" for="billing_name">Name<span>*</span></label>
 			<div class="controls">
-				<input value="<??>"id="billing_name" name="billing_name" type="text" readonly> 
+				<input value="<?echo $user['FirstName'].' '.$user['LastName']?>"id="billing_name" name="billing_name" type="text" readonly> 
 			</div>
 		</div>
 
 		<div class="control-group ">
 			<label class="control-label" for="billing_address1">Address<span>*</span></label>
 			<div class="controls">
-				<input value="<??>" id="billing_address1" name="billing_address1" type="text" readonly>
+				<input value="<?echo $user['Address']?>" id="billing_address1" name="billing_address1" type="text" readonly>
 			</div>
 		</div>
 
